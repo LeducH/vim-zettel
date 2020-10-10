@@ -9,7 +9,7 @@ Main features:
 - customizable filenames (date and time, title, consecutive numbering)
 - links always show titles, regardless of the actual filename
 - fulltext support using FZF for searching and hyperlinking
-- search your Zettelkasten from LaTeX or Markdown documents and insert selected notes to the document
+- search your Zettelkaste from LaTeX or Markdown documents and insert selected notes to the document
 - template support 
 - automatically updated tag index
 - backlinks
@@ -22,7 +22,7 @@ command in Vim after package installation.
 
 # Install
 
-Using Vundle:
+## Using Vundle:
 
 
     Plugin 'vimwiki/vimwiki'
@@ -30,9 +30,18 @@ Using Vundle:
     Plugin 'junegunn/fzf.vim'
     Plugin 'michal-h21/vim-zettel'
     
+
+## Using [vim-plug](https://github.com/junegunn/vim-plug)
+
+    call plug#begin()
+    Plug 'vimwiki/vimwiki'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
+    Plug 'michal-h21/vim-zettel'
+    call plug#end()
+
 [Silver Searcher](https://github.com/ggreer/the_silver_searcher) is used for searching in the notes by default. 
 The used command can be changed by setting the `g:zettel_fzf_command` variable.
-
 
 # Usage
 
